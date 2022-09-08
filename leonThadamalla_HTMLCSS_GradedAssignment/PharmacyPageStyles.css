@@ -1,0 +1,426 @@
+/* styles for pharmacy home page */
+body {
+    background-color: white;
+    margin: 0%;
+}
+
+header {
+    color: whitesmoke;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    background-color: rgb(56, 53, 53);
+    padding: 20px;
+    padding-right: 100px;
+    margin-top: 0%;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-size: small;
+    background-color: black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 0%;
+}
+
+#navigate {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.menu {
+    margin: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#menu2 li,
+#menu3 li {
+    display: block;
+}
+
+#menu2,
+#menu3 {
+    position: absolute;
+    width: auto;
+    max-width: 150;
+    display: none;
+    background-color: rgb(241, 238, 238);
+    padding: 0%;
+    top: 100%;
+}
+
+.menu li:nth-child(2):hover #menu2,
+.menu li:nth-child(3):hover #menu3 {
+    display: block;
+}
+
+#menu2 li a,
+#menu3 li a {
+    color: steelblue;
+    font-size: 16px;
+}
+
+#menu2 li:hover,
+#menu3 li:hover {
+    background-color: gainsboro;
+}
+
+.imageContainer {
+    position: relative;
+    border: solid;
+    border-width: 5px;
+    border-color: steelblue;
+}
+
+#image1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation-name: ani1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ani1 {
+    0% {
+        opacity: 1;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#image2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation-name: ani2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ani2 {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    35% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#image3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation-name: ani3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ani3 {
+    0% {
+        opacity: 0;
+    }
+
+    35% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    55% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#image4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation-name: ani4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ani4 {
+    0% {
+        opacity: 0;
+    }
+
+    55% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#image5 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation-name: ani5;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ani5 {
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#products {
+    margin: 0%;
+    padding: 0%;
+    border: solid;
+    border-width: 5px;
+    border-color: black;
+    position: relative;
+}
+
+#covid,
+#diabetes {
+    margin-bottom: 10px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+#covidCare,
+#diabetesCare {
+    margin: 5px;
+    padding: 0%;
+}
+
+.covidCareProducts,
+.diabetesCareProducts {
+    margin: 30px;
+    padding: 0%;
+    background-color: rgba(245, 247, 255, 0.868);
+    width: 250px;
+    height: 270px;
+    position: relative;
+    left: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px lightgrey;
+    display: inline-block;
+}
+
+.covidCareProducts:hover,
+.diabetesCareProducts:hover {
+    transform: scale(1.10);
+}
+
+.priceAndOffer {
+    color: steelblue;
+    margin: 0%;
+    padding: 5px;
+}
+
+.imageContainer2 {
+    margin: 0%;
+    padding: 0%;
+    width: auto;
+    height: 55%;
+    text-align: center;
+    border: 0px;
+    position: relative;
+    border-radius: 2px;
+}
+
+.productImage {
+    width: 95%;
+    height: 100%;
+    object-fit: fill;
+}
+
+h4 {
+    padding: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    margin-bottom: 2px;
+}
+
+.buttonContainer {
+    text-align: center;
+    bottom: 2px;
+    position: relative;
+    bottom: 2px;
+}
+
+.addToCartButton {
+    width: 95%;
+    background-color: rgba(236, 238, 255, 0.736);
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(51, 1, 178);
+    font-weight: bolder;
+    color: orange;
+    font-size: medium;
+}
+
+.addToCartButton:active {
+    background-color: rgba(250, 234, 230, 0.736);
+    border-color: rgb(0, 255, 76);
+}
+
+
+/* styles for lab form page */
+input {
+    border-top-style: hidden;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    padding: 5px;
+    margin-bottom: 5px;
+    min-width: auto;
+}
+
+#formWindow {
+    position: relative;
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 30px rgb(120, 119, 119);
+    display: flex;
+    align-items: stretch;
+}
+
+.formSection {
+    position: relative;
+    display: inline-block;
+    height: 670px;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    min-height: 100%;
+    min-width: 500px;
+}
+
+#labTestImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#buttons {
+    position: relative;
+    left: 35%;
+}
+
+button {
+    color: white;
+    background-color: rgb(194, 99, 231);
+    position: relative;
+    margin: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    top: 0px;
+    border-radius: 5px;
+    border-width: 0px;
+    padding: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#formContent {
+    padding: 30px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+
+#imageContainer {
+    background-position: right top;
+    background-size: 55% 100%;
+    background-image: url(Lab-Test/lab-test.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}

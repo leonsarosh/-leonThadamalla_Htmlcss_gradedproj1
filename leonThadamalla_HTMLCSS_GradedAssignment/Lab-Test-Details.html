@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="PharmacyPageStyles.css">
+</head>
+
+<body>
+    <header>
+        Pharmacy
+    </header>
+
+    <section id="navigate">
+        <nav>
+            <ul class="menu">
+                <li><a href="PharmacyHomePage.html">Home</a></li>
+                <li><a href="#">Our Medicines</a>
+                    <ul id="menu2">
+                        <li><a href="#">Fever</a></li>
+                        <li><a href="#">Muscle Pains</a></li>
+                        <li><a href="#">Cold & Cough</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Health Care</a>
+                    <ul id="menu3">
+                        <li><a href="#">Baby Care</a></li>
+                        <li><a href="#">Skin Care</a></li>
+                        <li><a href="#">Home Care</a></li>
+                        <li><a href="#">Personal Care</a></li>
+                        <li><a href="#">Pet Care</a></li>
+                    </ul>
+                </li>
+                <li><a href="Lab-Test-Details.html">Lab Test</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <form action="" onsubmit="return checkCheckBox(this);">
+        <div id="formWindow">
+            <div class="formSection">
+                <div id="formContent">
+                    <h3>1. Your Contact Details</h3>
+                    <input type="text" name="F_name" placeholder="Full Name" required>
+                    <input type="number" name="P_id" placeholder="Patient Id if exists" required><br>
+                    <input type="number" name="Contact_no" placeholder="Contact Number" required>
+                    <input type="email" name="Email_id" placeholder="Email Id" required>
+
+                    <h3>2. Address</h3>
+                    <input type="text" name="House_no" placeholder="H-No" required>
+                    <input type="text" name="Street" placeholder="Street" required><br>
+                    <input type="text" name="Area" placeholder="Area" required>
+
+                    <h4>District</h4>
+                    <select name="district">
+                        <option value="select">Choose</option>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Vadodara">Vadodara</option>
+                        <option value="Anand">Anand</option>
+                        <option value="Surat">Surat</option>
+                        <option value="Rajkot">Rajkot</option>
+                    </select>
+
+                    <h3>3. Choose Test Type</h3>
+                    <div>
+                        <input type="checkbox" id="CBC" name="Test_Type_1" value="CBC">
+                        <label for="CBC">CBC</label><br>
+                        <input type="checkbox" id="Complete_Urine" name="Test_Type_2" value="Complete_Urine">
+                        <label for="Complete_Urine">Complete Urine</label><br>
+                        <input type="checkbox" id="Lipid_Profile" name="Test_Type_3" value="Lipid_Profile">
+                        <label for="Lipid_Profile">Lipid_Profile</label><br>
+                        <input type="checkbox" id="Thyroid_Stimulating_Hormone" name="Test_Type_4"
+                            value="Thyroid_Stimulating_Hormone">
+                        <label for="Thyroid_Stimulating_Hormone">Thyroid Stimulating Hormone</label><br>
+                        <input type="checkbox" id="Glucose_Test" name="Test_Type_5" value="Glucose_Test">
+                        <label for="Glucose_Test">Glucose Test</label><br>
+                    </div>
+
+                    <p>Do you need a hard copy of the report?</p>
+                    <div>
+                        <input type="radio" id="Yes" name="Yes/No" value="Yes">
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="Yes/No" value="No">
+                        <label for="No">No</label><br>
+                    </div>
+                    <br>
+
+                    <label for="Test_date_time">Select suitable date and time:</label><br>
+                    <input type="datetime-local" id="Test_date_time" name="Test_date_time" required><br>
+                </div>
+            </div>
+
+            <div id="imageContainer" class="formSection">
+            </div>
+        </div>
+
+        <div id="buttons">
+            <button>Reset</button>
+            <button>Submit</button>
+        </div>
+    </form>
+
+    <footer>
+        @copyright. Only for demonstration purposes.
+    </footer>
+
+    <script>
+        function checkCheckBox(labForm) {
+            if (labForm.Test_Type_1.checked == false &&
+                labForm.Test_Type_2.checked == false &&
+                labForm.Test_Type_3.checked == false &&
+                labForm.Test_Type_4.checked == false &&
+                labForm.Test_Type_5.checked == false) {
+                alert('Check atleast one box for test without fail');
+                return false;
+            } else {
+                return true;
+            }
+        };
+    </script>
+</body>
+
+</html>
